@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="large.css">
+    <title>Hobby Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="header-main">
+                <!-- logo -->
+            <div class="header-logo">
+                <h1><a href="#"><img src="img/small-logo.png" width="40" height="40"></a></h1>
+            </div>
+
+            <!-- hamburger  -->
+            <div class="hamburger">
+
+            </div>
+
+            <!-- header menu  -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Inquiry</a></li>
+                </ul>
+            </nav>
+            <nav class="large-menu">
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Inquiry</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-main">
+            <video id="v-logo" autoplay="" muted="" loop="" src="img/logo.mp4"></video>
+        </div>
+    </section>
+
+    <section class="profile">
+
+    </section>
+
+   
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(".hamburger").click(function(){
+            $(".hamburger").toggleClass("is-active");
+            $(".menu").toggleClass("is-active");
+            
+        });
+
+        jQuery(function($){
+            var movie = document.getElementById("v-logo");
+            movie.controls = false;
+        });
+    </script>
+</body>
+</html>
